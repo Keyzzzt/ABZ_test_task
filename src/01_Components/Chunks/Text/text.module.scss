@@ -1,0 +1,21 @@
+@import '../../../02_Styles/variables';
+
+.textWrapper {
+  position: relative;
+
+}
+
+.text,
+.textError {
+  font-size: 16px;
+  line-height: 26px;
+  word-break: break-word;
+}
+
+.text {
+  color: rgba(0, 0, 0, .87);
+}
+
+.textError {
+  color: $errorColor;
+}

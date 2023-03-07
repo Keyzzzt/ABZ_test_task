@@ -1,0 +1,17 @@
+@import '../../../02_Styles/variables';
+
+.button {
+  padding: 4px 22px;
+  background-color: $primaryColor;
+  border-radius: 80px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primaryHover;
+  }
+
+  &:disabled {
+    color: #fff;
+    background-color: $disabledColor;
+  }
+}

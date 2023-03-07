@@ -1,0 +1,42 @@
+$offset: 16px;
+$bodyFontSize: 16px;
+$textLineHeight: 26px;
+$cardGap: 20px;
+
+
+$primaryColor: #F4E041;
+$primaryHover: #FFE302;
+$textColor: rgba(0, 0, 0, .87);
+$secondaryColor: #00BDD3;
+$bgColor: #F8F8F8;
+$errorColor: #CB3D40;
+$borderColor: #D0CFCF;
+$disabledColor: #B4B4B4;
+$placeholderColor: #7E7E7E;
+
+
+@mixin breakpoint($point) {
+  @if $point ==2560 {
+    @media (min-width: 2560px) {
+      @content;
+    }
+  }
+
+  @else if $point ==1024 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $point ==768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point ==360 {
+    @media (min-width: 360px) {
+      @content;
+    }
+  }
+}

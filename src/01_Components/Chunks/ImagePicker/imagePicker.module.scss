@@ -1,0 +1,69 @@
+@import '../../../02_Styles/variables';
+
+.imagePicker {
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+}
+
+.uploadButton {
+  padding: 14px 15px;
+  border: 1px solid $textColor;
+  border-radius: 4px 0 0 4px;
+  background: $bgColor;
+  cursor: pointer;
+  &:disabled{
+    border-color: $borderColor;
+  }
+  &.error {
+    border: 1px solid $errorColor;
+  }
+}
+
+.uploadInput {
+  flex: 1;
+  padding: 14px 0 14px 16px;
+  border: 1px solid $borderColor;
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+
+  &.error {
+    border: 1px solid $errorColor;
+    border-left: 0;
+
+  }
+}
+
+.errorText {
+  color: $errorColor;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+}
+
+.hiddenFileInput {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.hiddenImage {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.errorText {
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  bottom: -16px;
+  left: 10px;
+  color: $errorColor;
+}

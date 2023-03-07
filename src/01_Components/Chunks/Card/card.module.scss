@@ -1,0 +1,22 @@
+@import '../../../02_Styles/variables';
+
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 8px;
+  width: 100%;
+
+  & div:first-of-type {
+    margin: 20px 0;
+  }
+
+  @include breakpoint(768) {
+    width: calc(100% / 2 - 16px);
+  }
+  @include breakpoint(1024) {
+    margin: 15px;
+    width: calc(100% / 3 - 30px);
+  }
+}

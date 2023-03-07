@@ -1,0 +1,30 @@
+@import '../../../02_Styles/variables';
+
+.hero {
+  max-width: 1170px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../../assets/pexels-alexandr-podvalny-1227513.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .heroContent {
+    padding: 40px 0 71px 0;
+    margin: 0 auto;
+    @include breakpoint(768) {
+      padding: 69px 0 68px 0;
+      max-width: 380px;
+    }
+    @include breakpoint(1024) {
+      padding: 164px 0 163px 0;
+    }
+  }
+
+  & p {
+    margin-top: 21px;
+  }
+
+  & input {
+    margin-top: 32px;
+  }
+}

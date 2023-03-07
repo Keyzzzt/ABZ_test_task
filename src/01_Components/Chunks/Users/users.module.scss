@@ -1,0 +1,13 @@
+@import '../../../02_Styles/variables';
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -8px;
+  @include breakpoint(1024) {
+    margin: 0 -15px;
+  }
+}
+
+

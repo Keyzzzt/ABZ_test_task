@@ -1,0 +1,16 @@
+@import '../../../02_Styles/variables';
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @include breakpoint(768) {
+    padding: 0 32px;
+  }
+  @include breakpoint(1024) {
+    padding: 0 60px;
+  }
+  @include breakpoint(2560) {
+    padding: 0;
+  }
+}

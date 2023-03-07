@@ -1,0 +1,26 @@
+@import '../../../02_Styles/variables';
+
+
+.position {
+  text-align: left;
+}
+
+.signupForm {
+  margin: 50px auto;
+  max-width: 380px;
+  position: relative;
+}
+
+.succesImage{
+  margin-top: 50px;
+}
+.phoneEmailExistsError{
+  color: $errorColor;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 100;
+}
