@@ -38,9 +38,9 @@ export const MainPage: FC<PropsType> = () => {
   const [positionError, setPositionError] = useState(false)
   const [imageError, setImageError] = useState("")
   const [inputError, setInputError] = useState(false)
-  const [name, setName] = useState("Name")
-  const [email, setEmail] = useState("a@a.com")
-  const [phone, setPhone] = useState("+380049000020")
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
   const [photo, setPhoto] = useState<File>()
   const [selectedPosition, setSelectedPosition] = useState<number>()
   const {
